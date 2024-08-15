@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>570</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_open"/>
+    <addaction name="action_save"/>
+    <addaction name="action_save_a"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_A">
+    <property name="title">
+     <string>关于(A)</string>
+    </property>
+    <addaction name="action_about"/>
+    <addaction name="action_help"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(E)</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_selectAll"/>
+    <addaction name="action_undo"/>
+    <addaction name="action_redo"/>
+    <addaction name="action_copy"/>
+    <addaction name="action_paste"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_A"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_new">
+   <property name="text">
+    <string>新建文件          Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>打开文件          Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存                   Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_save_a">
+   <property name="text">
+    <string>另存为...</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出                   Alt+F4</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="text">
+    <string>撤销         Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_redo">
+   <property name="text">
+    <string>重做         Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于...</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="action_paste">
+   <property name="text">
+    <string>粘贴         Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="text">
+    <string>复制         Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_selectAll">
+   <property name="text">
+    <string>全选         Ctrl+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
